@@ -1,36 +1,32 @@
-package com.project.journalApp.dao.journal;
+package com.project.journalApp.service;
 
-import com.project.journalApp.model.journalEntity;
+import com.project.journalApp.model.JournalEntity;
 import com.project.journalApp.repository.JournalEntryRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
-
-@Component
-public class journalDAOImpl implements journalDAO {
-
+@Service
+public class JournalEntryService  {
     @Autowired
     private JournalEntryRepository journalEntryRepository;
 
-    public void add(journalEntity myjournal)
+    public void add(JournalEntity myjournal)
     {
         myjournal.setDate(LocalDate.now());
         journalEntryRepository.save(myjournal);
     }
-    public List<journalEntity> getAll()
+    public List<JournalEntity> getAll()
     {
         return journalEntryRepository.findAll();
     }
 
-    @Override
-    public journalEntity findbyId(ObjectId id) {
+    public JournalEntity findbyId(ObjectId id) {
         return journalEntryRepository.findById(id).orElse(null);
     }
 
-    @Override
     public void DeletebyId(ObjectId id) {
         journalEntryRepository.deleteById(id);
     }

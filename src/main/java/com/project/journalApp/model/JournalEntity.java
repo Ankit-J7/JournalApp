@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Document(collection = "journalEntries")
-public class journalEntity {
+public class JournalEntity {
     @Id
     private ObjectId id;
 
