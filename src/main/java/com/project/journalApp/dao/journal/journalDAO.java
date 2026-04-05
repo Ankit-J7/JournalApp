@@ -1,6 +1,6 @@
-package com.project.journal.dao.journal;
+package com.project.journalApp.dao.journal;
 
-import com.project.journal.model.journalEntity;
+import com.project.journalApp.model.journalEntity;
 import org.bson.types.ObjectId;
 
 import java.util.List;

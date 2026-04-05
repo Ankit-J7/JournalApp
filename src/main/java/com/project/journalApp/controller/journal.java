@@ -1,11 +1,10 @@
-package com.project.journal.controller;
+package com.project.journalApp.controller;
 
-import com.project.journal.dao.journal.journalDAOImpl;
-import com.project.journal.model.journalEntity;
+import com.project.journalApp.dao.journal.journalDAOImpl;
+import com.project.journalApp.model.journalEntity;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +12,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping(value = "/api")
-public class journal {
+public class  journal {
 
     @Autowired
     private journalDAOImpl JournalDAOimpl;

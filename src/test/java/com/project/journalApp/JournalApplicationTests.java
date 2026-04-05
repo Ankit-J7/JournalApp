@@ -1,4 +1,4 @@
-package com.project.journal;
+package com.project.journalApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

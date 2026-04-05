@@ -1,14 +1,12 @@
-package com.project.journal.dao.journal;
+package com.project.journalApp.dao.journal;
 
-import com.project.journal.model.journalEntity;
-import com.project.journal.repository.JournalEntryRepository;
+import com.project.journalApp.model.journalEntity;
+import com.project.journalApp.repository.JournalEntryRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 @Component
