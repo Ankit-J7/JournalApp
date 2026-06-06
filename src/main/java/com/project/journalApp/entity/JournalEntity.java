@@ -10,6 +10,8 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Document(collection = "journalEntries")
 public class JournalEntity {
     @Id
@@ -17,5 +19,5 @@ public class JournalEntity {
 
     private String name;
     private String description;
-    private LocalDateTime date;
+    private LocalDateTime   date;
 }
